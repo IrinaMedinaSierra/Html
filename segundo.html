@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="autor" content="Irina Medina">
+    <meta name="keyword" content="html, practicas, estilos, css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#10037; Mi Segundo HTML &#10037;</title>
+    <link rel="shortcut icon" href="img/desarrollador-de-software.png" type="image/x-icon">
+    <style>        
+        ul{
+            /* se podria poner none,squre y disc*/
+            list-style-type: circle;
+        }
+        .cajas{
+            float: left;
+        }
+        .sinFloat{
+            clear:both;
+        }
+        a{
+            text-decoration: none;           
+        }
+    </style>
+</head>
+<body>
+    <!--Este es la segunda clase de html, parrafos, citas, listas y mas....-->
+    <h3>Párrafos</h3>
+    <p>Lorem       ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sequi eaque nemo similique ipsam molestias fugiat, consectetur tempore repellendus reiciendis, quo ullam numquam asperiores tenetur deleniti architecto. Provident, repellendus nisi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repellat, suscipit aliquam quaerat ut sequi, perferendis voluptatem iusto aspernatur molestias inventore impedit maiores doloribus totam blanditiis est aliquid! Maiores, temporibus?</p>
+    <h3>Citas</h3>
+    <blockquote>
+        <h2>"Si quieres cambiar al mundo, cámbiate a ti mismo."</h2>
+        <img src="img/Frases-Gandhi-Dia-Paz-03.jpg" alt="Gandhi: frases célebres" title="Gandhi frases célebres" width="150">
+        <p>Gandhi</p>
+    </blockquote>
+    <h3>Listas</h3>
+    <h4>Listas no enumeradas (ul)</h4>
+    <ul>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Kiwi</li>
+        <li>Plátano</li>
+        <li>Piña</li>
+    </ul>
+    <h4>Listas Ordenadas (numérico)</h4>
+    <div class="cajas">
+      <ol start="20" type="I">
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Kiwi</li>
+        <li>Plátano</li>
+        <li>Piña</li>
+    </ol>
+    </div>
+   <div class="cajas">
+    <ol  type="a">
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Kiwi</li>
+        <li>Plátano</li>
+        <li>Piña</li>
+    </ol>
+   </div>
+   <div class="cajas">
+    <ol  type="I">
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Kiwi</li>
+        <li>Plátano</li>
+        <li>Piña</li>
+    </ol>
+   </div>
+   <div class="cajas">
+    <ol  type="1" reversed>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Kiwi</li>
+        <li>Plátano</li>
+        <li>Piña</li>
+    </ol>
+   </div>
+   <div class="cajas">
+    <ol>
+        <li value="3">Manzanas</li>
+        <li>Peras</li>
+        <li>Kiwi</li>
+        <li value="4">Plátano</li>
+        <li>Piña</li>
+    </ol>
+   </div>
+   <div class="cajas">
+    <ol  type="i">
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Kiwi</li>
+        <li>Plátano</li>
+        <li>Piña</li>
+    </ol>
+   </div>
+   <div class="cajas">
+    <ol  type="A">
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Kiwi</li>
+        <li>Plátano</li>
+        <li>Piña</li>
+    </ol>
+   </div>
+<div class="sinFloat">
+   <h3>Lista de definiciones</h3>
+   <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de etiquetas para crear páginas Web</dd>
+   </dl>
+</div>
+<h3>Direcciones</h3>
+<h4>Contacto</h4>
+<address>
+    <p>
+        Calle Campo 81<br>
+        Tomelloso. Ciudad Real <br>
+        Web: <a href="https://ceat.es" target="_blank">Centro de Estudios CEAT</a>
+    </p>
+</address>
+<h3>Texto Preformateado</h3>
+<pre>
+    Enero       Febrero         Marzo
+    185         852             987
+    852         654             741
+</pre>
+<h3>Línea Horizontal (hr)</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id tenetur quia, maiores provident consequatur corrupti quas optio pariatur aliquam aspernatur laboriosam magni molestiae impedit! Ex voluptas cum sed impedit.</p>
+<hr>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, beatae corrupti impedit voluptas iusto accusamus sequi deserunt nihil numquam adipisci quia nisi, quas suscipit tempora blanditiis doloribus in, sapiente corporis?</p>
+<h3>Caracteres Especiales</h3>
+<p>&#10037;</p>
+<p>&rarr; Esto es una prueba &larr;</p>
+<a href="https://symbl.cc/es" target="_blank">Página de Símbolos</a>
+<h3>El marcado especial énfasis</h3>
+<p>El lenguaje HTML lo creo <strong>Tim Berners Lee</strong></p>
+<h3>El marcado especial sencillo</h3>
+<p>Para el Lenguaje HTML las <em>etiquetas</em> son la forma de indicar como se va a mostrar el contenido</p>
+<h3>Negrita y cursiva sin sentido semántico</h3>
+<p>Un <b>bonito</b> libro y una <i>bella</i> portada.</p> 
+<h3>Índice y Exponente</h3>
+<p>Los elementos sub y sup permiten respectivamente poner uno de los caracteres como índice o exponente</p>
+<p>H<sub>2</sub>O</p>
+<p>Un bidón de 10m<sup>3</sup></p>
+<h3>El subrayado</h3>
+<p>Para aplicar un subrayado, utilice el elemento u . 
+    Su sentido semántico es concreto, ya que permite resaltar 
+    un texto sin importancia particular o un texto cuya ortografía o <u>gramática son incorrectos</u>.</p>
+
+<h3>El tachado</h3>
+<p>Las páginas web se crean con el lenguaje <s>HTML 4.01</s>, ahora se diseñan con HTML5.</p> 
+<h3>Reducir tamaño del texto</h3>
+<p>Esto es como cuando llamamos un indice y va al pie de página <sup>1</sup></p>
+<hr>
+<p>1: <small>Es una etiqueta para reducir el tamaño de la letra</small></p>
+<h3>Los títulos de obras y las citas cortas</h3>
+<p>El elemento <i>cite</i> permite indicar el título de una obra y el elemento <i>q</i> 
+especifica una cita corta. El texto incluido en el título normalmente 
+se muestra en cursiva y el texto ubicado en la cita corta se muestra entre comillas.</p>
+<cite>Frases célebres de Gandhi</cite>
+<q>La fuerza no viene de una capacidad física. Viene de una voluntad indomable.</q>
+<h3>Las inserciones y eliminaciones</h3>
+<p>Estas etiquetas se utilizan <ins>poco</ins> porque normalmente tu haces la página y no tienes 
+    <del>editores</del> que cambien tu texto.</p>
+<h3>El retorno de Carro</h3>
+<p>Si quiero hacer un corte de línea manual solo debo utilizar la etiqueta br<br> para que siga en la siguiente 
+línea</p>
+<h3>Otros Formatos Semánticos</h3>
+<p>dfn indica que el texto es una definición.</p>
+<dfn>El lenguaje HTML es un lenguaje de hipertexto</dfn>
+<p>abbr añade una abreviatura</p>
+<abbr title="Hypertext Markup Language">HTML</abbr>
+<p>Con la etiqueta code  indicamos que se trata de código de programación</p>
+<code>
+    <pre>
+    if (a==1){
+        a+=2;
+        System.out.print "Es una prueba de código";
+    }else{
+        a=0;
+    }
+    </pre>
+</code>
+<p>La etiqueta var indica que es una variable matemática o informática</p>
+<var>x</var>
+<p>La etiqueta samp indica que es un ejemplo o muestra</p>
+<samp>x=a+b</samp>
+<p>La etiqueta kbd indica que hace una introduccion de texto por teclado</p>
+<kbd>ignorar</kbd>
+<p>mark nos permite destacar un texto</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque accusantium voluptas, soluta minus voluptate sint saepe? <mark>Ea atque saepe perspiciatis,</mark> a, ducimus, quae ratione obcaecati perferendis error ipsam voluptatibus. Cum.</p>
+<h3>Mostrar los detalles</h3>
+<details>  
+    <summary>Muestre la información detallada</summary>  
+        <p>Somos los mejores programadores...en por esto estudiamos mucho de viernes a lunes...</p>  
+        <p><img src="img/desarrollador-de-software.png" alt="Desarrollo software" width="25" />  
+        </p>  
+    </details>  
+
+</body>
+</html>
