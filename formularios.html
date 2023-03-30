@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="autor" content="Irina Medina">
+    <meta name="keyword" content="html, practicas, estilos, css, formularios">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#10037; FORMULARIOS HTML &#10037;</title>
+    <link rel="shortcut icon" href="img/desarrollador-de-software.png" type="image/x-icon">
+</head>
+<body>
+    <h2>Inscripción</h2>
+    <p>Por favor complete los siguientes campos. (*Obligatorio)</p>
+    <form>
+      <fieldset>
+            <legend>Datos Personales:</legend>
+            <p> <label for="nombre">Nombre:*&nbsp;&nbsp;</label>
+            <input type="text" id="nombre" name="nombre" required  maxlength="50" autofocus autocomplete placeholder="Indica tu nombre"></p>
+            <p> <label for="apellido">Apellido:*&nbsp;&nbsp;</label>
+            <input type="text" id="apellido" name="apellido" required maxlength="50" autocomplete 
+            placeholder="Indica tu apellido"></p>  
+            <p><label for="contrasenia">Contraseña:</label>
+            <input type="password" name="contrasenia" id="contrasenia">
+            </p>
+            <p>
+            <label for="comentarios">Tus Comentarios:</label><br>
+            <textarea name="comentarios" id="comentarios" maxlength="250" cols="33" rows="5" placeholder="Indica tus comentarios Max 250 caracteres"></textarea>
+            </p>          
+      </fieldset>
+       
+      <fieldset>
+        <legend>Datos de Contacto: </legend>
+        <p>
+        <label for="ciudad">Indica tu Ciudad </label>
+        <select name="ciudad" id="ciudad">
+            <option value=""></option>
+            <option value="Tomelloso">Tomelloso</option>
+            <option value="Argamasilla">Argamasilla de Alba</option>
+            <option value="Manzanares">Manzanares</option>
+            <option value="Criptana">Campo de Criptana</option>
+            <option value="Carrion">Carrión de Calatraba</option>
+            <option value="Alcazar">Alcázar de San Juan</option>
+        </select>
+        </p>
+        <p>
+            <label for="cursos">Indica los cursos que es estas interesado</label>
+            <select name="cursos" id="cursos" multiple size="6">   
+                <option value="html">HTML</option>
+                <option value="php">PHP</option>
+                <option value="java">JAVA</option>
+                <option value="javascript">JAVASCRIPT</option>
+                <option value="python">PYTHON</option>
+                <option value="c">C++</option>
+            </select>
+        </p>
+        <p>
+            <label for="tipoFormacion">Indica la modalidad:</label>
+            <input type="radio" name="modalidad" value="presencial">Presencial
+            <input type="radio" name="modalidad" value="online">Online
+            <input type="radio" name="modalidad" value="mixto" >Mixto
+        </p>
+        <p>Indica tu formas de pago: (multiples formas)
+            <input type="checkbox" name="tarjeta" id="tarjeta">Tarjeta Bancaria
+            <input type="checkbox" name="domiciliacion" id="domiciliacion">Domiciliación SEPA
+            <input type="checkbox" name="paypal" id="paypal">PayPal
+            <input type="checkbox" name="bizum" id="bizul">Bizum
+        </p>
+        <!--Hidden  -->
+        <input type="hidden" name="id" value="x">
+        <h4>Input type image</h4>
+        <input type="image" src="img/desarrollador-de-software.png" alt="desarrollo" width="5%">
+        <h4>Input type Email</h4>
+        <input type="email" >
+        <h4>Input type file</h4>
+        <label for="dni">Inserta tu dni:</label>
+        <input type="file" name="dni" id="dni">
+        <h4>Input type teléfono</h4>
+        <label for="phone">Indica tu teléfono</label>
+        <input type="tel" name="phone" id="phone">
+        <h4>Input type color</h4>
+        <label for="color">Indica tu color favorito:</label>
+        <input type="color" name="color" id="color">
+        <h4>Input type fecha</h4>
+        <label for="fecha">Indica tu fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha">
+        <h4>Input type number</h4>
+        <label for="numero">Indica tu número favorito</label>
+        <input type="number" name="numero" id="numero">
+        <h4>Input type Rango</h4>
+        <label for="rango">Indica el rango de sueldo deseado:</label>
+        <input type="range" name="rango" id="rango" min="1080" max="5000">
+        <p id="valor"></p>
+        
+        <h4>Input type search</h4>
+        <label for="busqueda">Buscar:</label>
+        <input type="search" id="busqueda" name="busqueda">
+    </fieldset>
+</form>
+    
+    <script>
+        let rango=document.getElementById("rango").value;
+        console.log(rango);
+        document.getElementById("valor").innerHTML=rango;
+    </script>
+</body>
+</html>
