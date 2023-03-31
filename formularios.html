@@ -90,18 +90,28 @@
         <h4>Input type Rango</h4>
         <label for="rango">Indica el rango de sueldo deseado:</label>
         <input type="range" name="rango" id="rango" min="1080" max="5000">
-        <p id="valor"></p>
+        
         
         <h4>Input type search</h4>
         <label for="busqueda">Buscar:</label>
         <input type="search" id="busqueda" name="busqueda">
     </fieldset>
+    <input type="submit" value="Enviar Formulario" onclick="leer()">
+    <input type="reset" value="Borrar Formulario">
 </form>
     
+    <p><span id="nombreS"></span> </p>
+   
+    <p id="valor"></p>
     <script>
+        function leer(){
         let rango=document.getElementById("rango").value;
         console.log(rango);
-        document.getElementById("valor").innerHTML=rango;
+        document.getElementById("valor").innerHTML="Sueldo Deseado: "+rango;
+        let nombre=document.getElementById("nombre").value;
+        console.log(nombre);
+        document.getElementById("nombreS").innerHTML="<h2>Tus datos son</h2>Nombre: " + nombre;
+        }
     </script>
 </body>
 </html>
