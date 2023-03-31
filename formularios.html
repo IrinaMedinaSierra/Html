@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="autor" content="Irina Medina">
     <meta name="keyword" content="html, practicas, estilos, css, formularios">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&#10037; FORMULARIOS HTML &#10037;</title>
     <link rel="shortcut icon" href="img/desarrollador-de-software.png" type="image/x-icon">
+    
 </head>
 <body>
     <h2>Inscripción</h2>
     <p>Por favor complete los siguientes campos. (*Obligatorio)</p>
-    <form>
+    <form method="get" action="leer.php">
       <fieldset>
             <legend>Datos Personales:</legend>
-            <p> <label for="nombre">Nombre:*&nbsp;&nbsp;</label>
-            <input type="text" id="nombre" name="nombre" required  maxlength="50" autofocus autocomplete placeholder="Indica tu nombre"></p>
-            <p> <label for="apellido">Apellido:*&nbsp;&nbsp;</label>
-            <input type="text" id="apellido" name="apellido" required maxlength="50" autocomplete 
-            placeholder="Indica tu apellido"></p>  
+            <p> <label for="nombre">Nombre:* </label>
+            <input type="text" id="nombre" name="nombre"  maxlength="50" placeholder="Indica tu nombre"></p>
+            <p> <label for="apellido">Apellido:* </label>
+            <input type="text" id="apellido" name="apellido"  maxlength="50" placeholder="Indica tu apellido"></p>  
             <p><label for="contrasenia">Contraseña:</label>
-            <input type="password" name="contrasenia" id="contrasenia">
+            <input type="password" name="contrasenia" id="contrasenia" required>
             </p>
             <p>
             <label for="comentarios">Tus Comentarios:</label><br>
@@ -32,7 +31,7 @@
       <fieldset>
         <legend>Datos de Contacto: </legend>
         <p>
-        <label for="ciudad">Indica tu Ciudad </label>
+            <p><label for="ciudad">Indica tu Ciudad</label>
         <select name="ciudad" id="ciudad">
             <option value=""></option>
             <option value="Tomelloso">Tomelloso</option>
@@ -44,7 +43,7 @@
         </select>
         </p>
         <p>
-            <label for="cursos">Indica los cursos que es estas interesado</label>
+            <label for="cursos">Indica los cursos que estás interesado</label>
             <select name="cursos" id="cursos" multiple size="6">   
                 <option value="html">HTML</option>
                 <option value="php">PHP</option>
@@ -55,7 +54,7 @@
             </select>
         </p>
         <p>
-            <label for="tipoFormacion">Indica la modalidad:</label>
+           Indica modalidad
             <input type="radio" name="modalidad" value="presencial">Presencial
             <input type="radio" name="modalidad" value="online">Online
             <input type="radio" name="modalidad" value="mixto" >Mixto
@@ -71,7 +70,7 @@
         <h4>Input type image</h4>
         <input type="image" src="img/desarrollador-de-software.png" alt="desarrollo" width="5%">
         <h4>Input type Email</h4>
-        <input type="email" >
+        <input type="email"  required>
         <h4>Input type file</h4>
         <label for="dni">Inserta tu dni:</label>
         <input type="file" name="dni" id="dni">
@@ -96,22 +95,33 @@
         <label for="busqueda">Buscar:</label>
         <input type="search" id="busqueda" name="busqueda">
     </fieldset>
-    <input type="submit" value="Enviar Formulario" onclick="leer()">
+    <input type="submit" value="Enviar Formulario">
     <input type="reset" value="Borrar Formulario">
+    
 </form>
     
     <p><span id="nombreS"></span> </p>
-   
+    <p><span id="apellidoS"></span> </p>
     <p id="valor"></p>
+    <p id="pass"></p>
     <script>
         function leer(){
-        let rango=document.getElementById("rango").value;
-        console.log(rango);
-        document.getElementById("valor").innerHTML="Sueldo Deseado: "+rango;
-        let nombre=document.getElementById("nombre").value;
-        console.log(nombre);
-        document.getElementById("nombreS").innerHTML="<h2>Tus datos son</h2>Nombre: " + nombre;
+            let rango=document.getElementById("rango").value;
+            console.log(rango);
+            document.getElementById("valor").innerHTML="Sueldo Deseado: "+rango;
+            let nombre=document.getElementById("nombre").value;
+            console.log(nombre);
+            document.getElementById("nombreS").innerHTML="<h2>Tus datos son</h2>Nombre: " + nombre;
+            let apellido=document.getElementById("apellido").value;
+            console.log(apellido);
+            document.getElementById("apellidoS").innerHTML="Apellidos:  " + apellido;
+            let password=document.getElementById("contrasenia").value;
+            console.log(password);
+            document.getElementById("pass").innerHTML="Contraseña:  " + password;
+            window.open("formulario2.html");
         }
+       
     </script>
+
 </body>
 </html>
